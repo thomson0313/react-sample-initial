@@ -1,0 +1,246 @@
+:root {
+    --overlay-01: rgba(23,23,23,0.9);
+    --overlay-02: rgba(0,0,0,0.8);
+    --layout-01: rgba(11,9,21,0.1973);
+    --layout-02: #5100FF;
+    --layout-03: #F066FF;
+    --background-01: #0B0915;
+    --primary-01: #05F283;
+    --secondary-01: #632BDC;
+    --secondary-02: #20123F;
+    --secondary-03: #864DF7;
+    --secondary-04: #301761;
+    --black-01: #000000;
+    --white-01: #FFFFFF;
+    --white-02: rgba(255,255,255, 0.6);
+    --orange-01: #FFAC4A;
+    --red-01: #EF4A4A;
+    --transparent: transparent;
+
+    --gray-01: #877CA3;
+    --primary-01-disabled: #096641;
+    --secondary-03-disabled: rgba(60, 40, 112, 1);
+
+    --gradient-app: linear-gradient(180deg, rgba(5, 242, 131, 0) 0%, #05F283 100%);
+    --gradient-price_up: linear-gradient(180deg, rgba(5, 242, 131, 0) 0%, #05F283 100%);
+    --gradient-price_down: linear-gradient(180deg, #05F283 0%, rgba(5, 242, 131, 0) 100%);
+
+
+
+    --typography-font-family: "Roboto Mono", Arial ,sans-serif;
+    
+    --typography-26-medium-font-size: 26px;
+    --typography-26-medium-line-height: 33.8px;
+    --typography-26-medium-font-weight: 500;
+
+    --typography-22-medium-font-size: 22px;
+    --typography-22-medium-line-height: 28.6px;
+    --typography-22-medium-font-weight: 500;
+
+    --typography-18-medium-font-size: 18px;
+    --typography-18-medium-line-height: 23.4px;
+    --typography-18-medium-font-weight: 500;
+
+    --typography-16-medium-font-size: 16px;
+    --typography-16-medium-line-height: 20.8px;
+    --typography-16-medium-font-weight: 500;
+
+    --typography-14-medium-font-size: 14px;
+    --typography-14-medium-line-height: 18px;
+    --typography-14-medium-font-weight: 500;
+
+    --typography-14-regular-font-size: 14px;
+    --typography-14-regular-line-height: 18px;
+    --typography-14-regular-font-weight: 400;
+
+    --typography-12-medium-font-size: 12px;
+    --typography-12-medium-line-height: 15px;
+    --typography-12-medium-font-weight: 500;
+
+    --typography-12-regular-font-size: 12px;
+    --typography-12-regular-line-height: 15px;
+    --typography-12-regular-font-weight: 400;
+
+    --typography-11-regular-font-size: 11px;
+    --typography-11-regular-line-height: 14px;
+    --typography-11-regular-font-weight: 400;
+}
+
+.header {
+    padding: 0 24px;
+    align-items: center;
+    border-bottom-width: 1px;
+    border-color: transparent;
+    display: flex;
+    flex-direction: row;
+    height: 65px;
+    justify-content: space-between;
+    position: fixed;
+    transition-duration: 200ms;
+    transition-property: all;
+    transition-timing-function: ease-in-out;
+    // width: 100%;
+    z-index: 5;
+    inset: 0px;
+    
+    > .left {
+        color: rgb(20, 112, 192);
+        align-items: center;
+        flex-direction: row;
+        gap: 24px;
+        display: flex;
+        position: relative;
+        min-height: 0px;
+        min-width: 0px;
+        flex-shrink: 0;
+        flex-basis: auto;
+
+        :last-child {
+            display: flex;
+            align-items: center;
+            flex-direction: row;
+            gap: 8px;
+        }
+    }
+
+    > .right {
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        min-height: 0px;
+        min-width: 0px;
+        flex-shrink: 0;
+        flex-basis: auto;
+        -webkit-box-align: center;
+        align-items: center;
+    }
+}
+
+.header-nav {
+    padding: 8px;
+    // border-radius: 40px;
+    cursor: pointer;
+    color: var(--gray-01);
+    font-size: var(--typography-16-medium-font-size);
+    font-family: "Roboto Mono", Arial, sans-serif;
+    font-weight: var(--typography-16-medium-font-weight);
+    line-height: var(--typography-16-medium-line-height);
+    overflow-wrap: break-word;
+    transition: color 0.25s;
+}
+
+.token-value{
+    display: flex;
+    flex-direction: row;
+    cursor: pointer;
+    position: relative;
+    min-height: 0px;
+    min-width: 0px;
+    flex-shrink: 0;
+    flex-basis: auto;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    height: 40px;
+    padding-right: 12px;
+    margin-left: 8px;
+    border-radius: 40px;
+    background: var(--background-01);
+    border-color: var(--secondary-02);
+    border-style: solid;
+    border-width: 1px;
+
+    > :last-child {
+        margin: 0px 8px;
+        color: var(--white-01);
+        font-size: var(--typography-14-medium-font-size);
+        font-family: "Roboto Mono", Arial, sans-serif;
+        font-weight: var(--typography-14-medium-font-weight);
+        line-height: var(--typography-14-medium-line-height);
+        overflow-wrap: break-word;
+        transition: color 0.25s;
+    }
+}
+
+.networks {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    min-height: 0px;
+    min-width: 40px;
+    flex-shrink: 0;
+    flex-basis: auto;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    height: 40px;
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-left: 8px;
+    border-radius: 40px;
+    background: var(--background-01);
+    border-color: var(--secondary-02);
+    border-style: solid;
+    border-width: 1px;
+}
+
+.languages {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    min-height: 0px;
+    min-width: 40px;
+    flex-shrink: 0;
+    flex-basis: auto;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    height: 40px;
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-left: 8px;
+    border-radius: 40px;
+    background: var(--background-01);
+    border-color: var(--secondary-02);
+    border-style: solid;
+    border-width: 1px;
+}
+
+.connect-wallet {
+    position: relative;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+    outline: 0px;
+    border: 0px;
+    margin: 0px 0px 0px 8px;
+    padding: 0px 16px;
+    user-select: none;
+    vertical-align: middle;
+    appearance: none;
+    text-decoration: none;
+    color: inherit;
+    -webkit-box-align: center;
+    align-items: center;
+    background: var(--primary-01);
+    cursor: pointer;
+    display: flex;
+    height: 40px;
+    -webkit-box-pack: center;
+    justify-content: center;
+    transition: 0.2s;
+    width: 100%;
+    border-radius: 32px;
+    font-family: inherit;
+    font-size: 100%;
+    font-weight: inherit;
+    line-height: inherit;
+}
+
+.background {
+    background: linear-gradient(180deg, var(--layout-01) 20.25%, var(--layout-02) 78.59%, var(--layout-03) 100%), url(../../assets/img/bg.svg) repeat-x var(--background-01) center top fixed;
+    inset: 0px;
+    position: fixed;
+}

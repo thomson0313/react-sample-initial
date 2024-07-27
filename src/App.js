@@ -1,9 +1,13 @@
 import React from "react";
 
+import Header from "./components/header";
+import './assets/styles/styles.global.scss'
+
 function App() {
   return (
     <div className="App">
-		this is react app start point...
+		<Header />
+    <div className="home"></div>
     </div>
   );
 }
