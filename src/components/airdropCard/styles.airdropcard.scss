@@ -1,0 +1,494 @@
+.airdrop-card {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    min-height: 0px;
+    min-width: 0px;
+    flex-shrink: 0;
+    flex-basis: auto;
+    align-self: center;
+    border-radius: 24px;
+    overflow: hidden;
+    background: var(--background-01);
+    border-color: var(--secondary-02);
+    border-style: solid;
+    border-width: 1pt;
+    width: 568px;
+
+    > :first-child {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        min-height: 0px;
+        min-width: 0px;
+        flex-shrink: 0;
+        flex-basis: auto;
+        -webkit-box-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        align-items: center;
+        padding: 20px 16px 0 16px;
+
+        margin: 0px;
+        color: var(--white-01);
+        font-size: var(--typography-18-medium-font-size);
+        font-family: "Roboto Mono", Arial, sans-serif;
+        font-weight: var(--typography-18-medium-font-weight);
+        line-height: var(--typography-18-medium-line-height);
+        overflow-wrap: break-word;
+        transition: color 0.25s;
+    }
+
+    > :last-child {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        min-height: 0px;
+        min-width: 0px;
+        flex-shrink: 2;
+        flex-basis: auto;
+        padding: 20px 16px 4px;
+    }
+}
+
+.airdrop-info {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    min-height: 0px;
+    min-width: 0px;
+    flex-shrink: 0;
+    flex-basis: auto;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    margin-bottom: 24px;
+
+    > .left {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        min-height: 0px;
+        min-width: 0px;
+        flex-shrink: 0;
+        flex-basis: auto;
+        
+        > .key {
+            margin: 0px 0px 8px;
+            color: var(--white-01);
+            font-size: var(--typography-14-medium-font-size);
+            font-family: "Roboto Mono", Arial, sans-serif;
+            font-weight: var(--typography-14-medium-font-weight);
+            line-height: var(--typography-14-medium-line-height);
+            overflow-wrap: break-word;
+            transition: color 0.25s;
+        }
+
+        > .value {
+            display: flex;
+            flex-direction: row;
+            position: relative;
+            min-height: 0px;
+            min-width: 0px;
+            flex-shrink: 0;
+            flex-basis: auto;
+            -webkit-box-align: center;
+            align-items: center;
+
+            > .icon {
+                display: flex;
+                flex-direction: column;
+                position: relative;
+                min-height: 0px;
+                min-width: 0px;
+                flex-shrink: 0;
+                flex-basis: auto;
+                margin-right: 8px;
+            }
+
+            > .content {
+                margin: 0px;
+                color: var(--white-01);
+                font-size: var(--typography-14-medium-font-size);
+                font-family: "Roboto Mono", Arial, sans-serif;
+                font-weight: var(--typography-14-medium-font-weight);
+                line-height: var(--typography-14-medium-line-height);
+                overflow-wrap: break-word;
+                transition: color 0.25s;
+            }
+        }
+    }
+
+    > .right {
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        min-height: 0px;
+        min-width: 0px;
+        flex-shrink: 0;
+        flex-basis: auto;
+        -webkit-box-pack: justify;
+        justify-content: space-between;
+
+        > .item {
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            min-height: 0px;
+            min-width: 0px;
+            flex-shrink: 0;
+            flex-basis: auto;
+            align-items: flex-end;
+            margin-left: 24px;
+
+            > .key {
+                margin: 0px 0px 8px;
+                color: var(--secondary-03);
+                font-size: var(--typography-14-medium-font-size);
+                font-family: "Roboto Mono", Arial, sans-serif;
+                font-weight: var(--typography-14-medium-font-weight);
+                line-height: var(--typography-14-medium-line-height);
+                overflow-wrap: break-word;
+                transition: color 0.25s;
+            }
+
+            > .value {
+                display: flex;
+                flex-direction: column;
+                position: relative;
+                min-height: 0px;
+                min-width: 20px;
+                flex-shrink: 0;
+                flex-basis: auto;
+                -webkit-box-pack: center;
+                justify-content: center;
+                -webkit-box-align: center;
+                align-items: center;
+                height: 20px;
+                padding-left: 6px;
+                padding-right: 6px;
+                border-radius: 10px;
+                background: var(--secondary-02);
+                margin: 0px;
+                color: var(--secondary-03);
+                font-size: var(--typography-14-medium-font-size);
+                font-family: "Roboto Mono", Arial, sans-serif;
+                font-weight: var(--typography-14-medium-font-weight);
+                line-height: var(--typography-14-medium-line-height);
+                overflow-wrap: break-word;
+                transition: color 0.25s;
+            }
+        }
+    }
+}
+
+.claim-panel {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    min-height: 0px;
+    min-width: 0px;
+    flex-shrink: 0;
+    flex-basis: auto;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    align-items: center;
+    border-radius: 16px;
+    height: 64px;
+    padding: 8px;
+    margin-bottom: 24px;
+    border-color: var(--secondary-02);
+    border-style: solid;
+    border-width: 1px;
+
+    > .amount {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        min-height: 0px;
+        min-width: 0px;
+        flex: 1 1 0%;
+        margin-left: 16px;
+
+        > .key {
+            margin: 0px 0px 2px;
+            color: var(--white-01);
+            font-size: var(--typography-14-medium-font-size);
+            font-family: "Roboto Mono", Arial, sans-serif;
+            font-weight: var(--typography-14-medium-font-weight);
+            line-height: var(--typography-14-medium-line-height);
+            overflow-wrap: break-word;
+            transition: color 0.25s;
+        }
+
+        > .value {
+            display: flex;
+            flex-direction: row;
+            position: relative;
+            min-height: 0px;
+            min-width: 0px;
+            flex: 1 1 0%;
+
+            > .content {
+                margin-left: 8px;
+                color: var(--primary-01);
+                font-size: var(--typography-14-medium-font-size);
+                font-family: "Roboto Mono", Arial, sans-serif;
+                font-weight: var(--typography-14-medium-font-weight);
+                line-height: var(--typography-14-medium-line-height);
+                overflow-wrap: break-word;
+                transition: color 0.25s;
+            }
+        }
+    }
+
+    > .button {
+        -webkit-box-align: center;
+        align-items: center;
+        background: var(--primary-01);
+        border-radius: 12px;
+        cursor: pointer;
+        display: flex;
+        height: 48px;
+        -webkit-box-pack: center;
+        justify-content: center;
+        padding-left: 24px;
+        padding-right: 24px;
+        transition: 0.2s;
+        width: 100%;
+        max-width: max-content;
+
+        margin: 0px;
+        text-align: center;
+        color: var(--black-01);
+        font-size: var(--typography-16-medium-font-size);
+        opacity: 1;
+        font-family: "Roboto Mono", Arial, sans-serif;
+        font-weight: var(--typography-16-medium-font-weight);
+        line-height: var(--typography-16-medium-line-height);
+        overflow-wrap: break-word;
+        transition: color 0.25s;
+    }
+}
+
+.connect-button {
+    position: relative;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+    outline: 0px;
+    border: 0px;
+    margin: 0px 0px 16px;
+    padding: 0px 24px;
+    user-select: none;
+    vertical-align: middle;
+    appearance: none;
+    text-decoration: none;
+    color: inherit;
+    -webkit-box-align: center;
+    align-items: center;
+    background: var(--primary-01);
+    border-radius: 12px;
+    cursor: pointer;
+    display: flex;
+    height: 48px;
+    -webkit-box-pack: center;
+    justify-content: center;
+    transition: 0.2s;
+    width: 100%;
+
+    text-align: center;
+    color: var(--black-01);
+    font-size: var(--typography-16-medium-font-size);
+    opacity: 1;
+    font-family: "Roboto Mono", Arial, sans-serif;
+    font-weight: var(--typography-16-medium-font-weight);
+    line-height: var(--typography-16-medium-line-height);
+    overflow-wrap: break-word;
+    transition: color 0.25s;
+}
+
+.invite-title {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    min-height: 0px;
+    min-width: 0px;
+    flex-shrink: 0;
+    flex-basis: auto;
+    padding-bottom: 24px;
+    margin: 0px;
+    color: var(--white-01);
+    font-size: 32px;
+    font-family: "Roboto Mono", Arial, sans-serif;
+    font-weight: var(--typography-14-medium-font-weight);
+    line-height: 42px;
+    overflow-wrap: break-word;
+    transition: color 0.25s;
+
+    > span > span {
+        color: var(--primary-01);
+    }
+}
+
+.invite-how {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    min-height: 0px;
+    min-width: 0px;
+    flex-shrink: 0;
+    flex-basis: auto;
+
+    > .title {
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        min-height: 0px;
+        min-width: 0px;
+        flex-shrink: 0;
+        flex-basis: auto;
+        margin-bottom: 18px;
+        -webkit-box-align: center;
+        align-items: center;
+
+        color: var(--white-01);
+        font-size: var(--typography-22-medium-font-size);
+        font-family: "Roboto Mono", Arial, sans-serif;
+        font-weight: var(--typography-22-medium-font-weight);
+        line-height: var(--typography-22-medium-line-height);
+        overflow-wrap: break-word;
+        transition: color 0.25s;
+    }
+
+    > .steps {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        min-height: 0px;
+        min-width: 0px;
+        flex-shrink: 0;
+        flex-basis: auto;
+
+        > :first-child {
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            min-height: 0px;
+            min-width: 0px;
+            flex-shrink: 0;
+            flex-basis: auto;
+            width: 100%;
+
+            > .step {
+                display: flex;
+                flex-direction: row;
+                position: relative;
+                z-index: 1;
+
+                > .icon {
+                    stroke: var(--primary-01);
+                    stroke-width: 0;
+                    align-items: center;
+                    background-color: var(--secondary-04);
+                    border-radius: 56px;
+                    color: var(--primary-01);
+                    display: flex;
+                    height: 56px;
+                    justify-content: center;
+                    margin-right: 20px;
+                    width: 56px;
+                }
+
+                > .description {
+                    display: flex;
+                    flex-direction: column;
+                    position: relative;
+                    min-height: 0px;
+                    min-width: 0px;
+                    flex: 1 0 0px;
+                    -webkit-box-flex: 1;
+                    padding-bottom: 0px;
+
+                    > .title {
+                        margin: 0px;
+                        color: var(--primary-01);
+                        font-size: var(--typography-18-medium-font-size);
+                        font-family: "Roboto Mono", Arial, sans-serif;
+                        font-weight: var(--typography-18-medium-font-weight);
+                        line-height: var(--typography-18-medium-line-height);
+                        overflow-wrap: break-word;
+                        transition: color 0.25s;
+                    }
+                    > .badge {
+                        display: flex;
+                        flex-direction: column;
+                        position: relative;
+                        min-height: 0px;
+                        min-width: 0px;
+                        flex-shrink: 0;
+                        flex-basis: auto;
+                        width: fit-content;
+                        border-radius: 16px;
+                        padding-left: 6px;
+                        padding-right: 6px;
+                        margin-top: 8px;
+                        margin-bottom: 8px;
+                        background: var(--secondary-03);
+
+                        color: var(--white-01);
+                        font-size: var(--typography-14-medium-font-size);
+                        font-family: "Roboto Mono", Arial, sans-serif;
+                        font-weight: var(--typography-14-medium-font-weight);
+                        line-height: var(--typography-14-medium-line-height);
+                        overflow-wrap: break-word;
+                        transition: color 0.25s;
+                    }
+                    > .content {
+                        margin: 0px 0px 36px;
+                        color: var(--white-01);
+                        font-size: var(--typography-14-medium-font-size);
+                        opacity: 0.6;
+                        font-family: "Roboto Mono", Arial, sans-serif;
+                        font-weight: var(--typography-14-medium-font-weight);
+                        line-height: var(--typography-14-medium-line-height);
+                        overflow-wrap: break-word;
+                        transition: color 0.25s;
+                    }
+                }
+            }
+        }
+
+        > :first-child::before {
+            background-color: var(--secondary-04);
+            bottom: 0;
+            content: "";
+            left: 28px;
+            position: absolute;
+            top: 0;
+            width: 2px;
+        }
+
+        > :last-child {
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            min-height: 0px;
+            min-width: 0px;
+            flex-shrink: 0;
+            flex-basis: auto;
+            width: 100%;
+
+            display: flex;
+            flex-direction: row;
+            position: relative;
+            z-index: 1;
+        }
+    }
+}
+
+
+@media (max-width: 768px) {
+    .airdrop-card {
+        width: 100%;
+    }
+}

@@ -10,7 +10,6 @@ import LangsImg from '../../assets/img/lang.svg'
 const Header = () => {
     return(
         <>
-            <div className="background"></div>
             <div className="header">
                 <div className="left">
                     <div>
