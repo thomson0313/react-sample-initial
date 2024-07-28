@@ -5,6 +5,7 @@ import AirdropCard from "./components/airdropCard";
 import './assets/styles/styles.global.scss'
 
 function App() {
+
 	return (
 		<div className="App">
 			<div className="background"></div>
