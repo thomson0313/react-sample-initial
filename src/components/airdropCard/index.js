@@ -8,6 +8,7 @@ import WalletConnectModal from "../walletConnectModal";
 import TokenImg_S from '../../assets/img/drop_s.svg'
 import StepImg_1 from '../../assets/img/step_1.svg'
 import RewardImg from '../../assets/img/reward.svg'
+import ReferralIcon from '../../assets/img/referral.svg'
 
 import { WeeklyData, AllData } from "../../utils/data/leaderboardData";
 
@@ -74,13 +75,18 @@ const AirdropCard = () => {
                                 <div className="key">Duals</div>
                                 <div className="value">0</div>
                             </div>
-                            <div className="item">
+                            <div className="item mobile-hide">
                                 <div className="key">Swaps</div>
                                 <div className="value">0</div>
                             </div>
                             <div className="item">
                                 <div className="key">Referrals</div>
-                                <div className="value">0</div>
+                                <div className="referral-value">
+                                    <div>
+                                        <img src={ReferralIcon} alt="icon" />
+                                    </div>
+                                    <div className="value">0</div>
+                                </div>
                             </div>
                         </div>
                     </div>
