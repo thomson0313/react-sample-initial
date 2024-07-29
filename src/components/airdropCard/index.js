@@ -9,6 +9,8 @@ import TokenImg_S from '../../assets/img/drop_s.svg'
 import StepImg_1 from '../../assets/img/step_1.svg'
 import RewardImg from '../../assets/img/reward.svg'
 
+import { WeeklyData, AllData } from "../../utils/data/leaderboardData";
+
 const TabPanel = (props) => {
     const { children, value, index, ...other } = props;
   
@@ -31,28 +33,7 @@ const TabPanel = (props) => {
                         <th>Reward</th>
                     </tr>
                 </thead>
-                <tbody>
-                    <tr>
-                        <td>
-                            <div className="ranking-1">1</div>
-                        </td>
-                        <td>
-                            <div className="address">0x0c5...1fb</div>
-                        </td>
-                        <td>
-                            <div className="earned">
-                                <img src={TokenImg_S} alt="token" />
-                                <div>134,700</div>
-                            </div>
-                        </td>
-                        <td>
-                            <div className="reward">
-                                <img src={RewardImg} alt="reward" />
-                                <div>100,000</div>
-                            </div>
-                        </td>
-                    </tr>
-                </tbody>
+                {children}
             </table>
           </div>
         )}
@@ -204,10 +185,56 @@ const AirdropCard = () => {
                                 <Tab label="All-time" className={`custom-tab ${value === 1 ? 'custom-tab-selected' : ''}`} />
                             </Tabs>
                             <TabPanel value={value} index={0}>
-                                tyiouytioytupiouypoiuy
+                                <tbody>
+                                    {WeeklyData.map((data, key) => 
+                                        <tr>
+                                            <td>
+                                                <div className={key<3?`ranking-${key+1}`:"ranking"}>{key+1}</div>
+                                            </td>
+                                            <td>
+                                                <div className="address">{(data.address).slice(0, 5) + "..." + (data.address).slice(-3)}</div>
+                                            </td>
+                                            <td>
+                                                <div className="earned">
+                                                    <img src={TokenImg_S} alt="token" />
+                                                    <div>{data.earned}</div>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div className="reward">
+                                                    <img src={RewardImg} alt="reward" />
+                                                    <div>{data.reward}</div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    )}
+                                </tbody>
                             </TabPanel>
                             <TabPanel value={value} index={1}>
-                                Item Two Content
+                                <tbody>
+                                    {AllData.map((data, key) => 
+                                        <tr>
+                                            <td>
+                                                <div className={key<3?`ranking-${key+1}`:"ranking"}>{key+1}</div>
+                                            </td>
+                                            <td>
+                                                <div className="address">{(data.address).slice(0, 5) + "..." + (data.address).slice(-3)}</div>
+                                            </td>
+                                            <td>
+                                                <div className="earned">
+                                                    <img src={TokenImg_S} alt="token" />
+                                                    <div>{data.earned}</div>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div className="reward">
+                                                    <img src={RewardImg} alt="reward" />
+                                                    <div>{data.reward}</div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    )}
+                                </tbody>
                             </TabPanel>
                         </div>
                     </div>

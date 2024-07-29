@@ -722,8 +722,80 @@
     }
 }
 
+.ranking {
+    background: var(--secondary-03);
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    min-height: 0px;
+    min-width: 0px;
+    flex-shrink: 0;
+    flex-basis: auto;
+    width: 32px;
+    height: 32px;
+    border-radius: 32px;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    color: var(--white-01);
+    font-size: var(--typography-14-medium-font-size);
+    font-family: "Roboto Mono", Arial, sans-serif;
+    font-weight: var(--typography-14-medium-font-weight);
+    line-height: var(--typography-14-medium-line-height);
+    overflow-wrap: break-word;
+    transition: color 0.25s;
+}
 .ranking-1 {
     background: linear-gradient(rgb(255, 184, 0), rgb(226, 81, 0));
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    min-height: 0px;
+    min-width: 0px;
+    flex-shrink: 0;
+    flex-basis: auto;
+    width: 32px;
+    height: 32px;
+    border-radius: 32px;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    color: var(--white-01);
+    font-size: var(--typography-14-medium-font-size);
+    font-family: "Roboto Mono", Arial, sans-serif;
+    font-weight: var(--typography-14-medium-font-weight);
+    line-height: var(--typography-14-medium-line-height);
+    overflow-wrap: break-word;
+    transition: color 0.25s;
+}
+.ranking-2 {
+    background: linear-gradient(rgb(219, 219, 219), rgb(70, 70, 70));
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    min-height: 0px;
+    min-width: 0px;
+    flex-shrink: 0;
+    flex-basis: auto;
+    width: 32px;
+    height: 32px;
+    border-radius: 32px;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    color: var(--white-01);
+    font-size: var(--typography-14-medium-font-size);
+    font-family: "Roboto Mono", Arial, sans-serif;
+    font-weight: var(--typography-14-medium-font-weight);
+    line-height: var(--typography-14-medium-line-height);
+    overflow-wrap: break-word;
+    transition: color 0.25s;
+}
+.ranking-3 {
+    background: linear-gradient(rgb(184, 147, 104), rgb(144, 34, 0));
     display: flex;
     flex-direction: column;
     position: relative;
