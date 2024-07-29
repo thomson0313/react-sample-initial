@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import WalletConnectModal from "../walletConnectModal";
 import './styles.promotCard.scss'
 
-import PromoteImg from '../../assets/img/promote.jpg'
+import PromoteImg from '../../assets/img/promote.gif'
 import Logo from '../../assets/img/logo.png'
 import CloseButton from '../../assets/img/close.svg'
 
@@ -18,7 +18,7 @@ const PromotCard = () => {
     const handleIsModal = (flag) => {
         setIsModal(flag);
     }
-    
+
     return(
         <div>
             {isOpen?
@@ -26,7 +26,7 @@ const PromotCard = () => {
                     <div className="video-section">
                         <img src={PromoteImg} alt="img" />
                     </div>
-                    <div className="contents">Get free $REDY points!</div>
+                    <div className="contents">Get 100 $REDY - swap $10!</div>
                     <div className="claim-button" onClick={() => setIsModal(true)}>Claim now</div>
                     <div className="close-button" onClick={handleClick}>
                         <img src={CloseButton} alt="close" />
