@@ -62,6 +62,10 @@
             transition: background-color 200ms, transform 100ms;
         }
     }
+
+    @media (max-width: 768px) {
+        width: 100%;
+    }
 }
 
 .wallets {

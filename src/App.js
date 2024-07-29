@@ -2,6 +2,7 @@ import React from "react";
 
 import Header from "./components/header";
 import AirdropCard from "./components/airdropCard";
+import PromotCard from "./components/promotCard";
 import './assets/styles/styles.global.scss'
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
 			<div className="home">
 				<AirdropCard />
 			</div>
+			<PromotCard />
 		</div>
 	);
 }

@@ -39,7 +39,7 @@ const Header = () => {
                     <div className="languages">
                         <img src={LangsImg} alt="langs" />
                     </div>
-                    <div className="connect-wallet" onClick={() => setIsModal(true)}>Connect Wallet</div>
+                    <div className="connect-wallet" onClick={() => setIsModal(true)}>Connect</div>
                 </div>
             </div>
             {

@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+import Web3 from 'web3';
 
 import './styles.walletConnectModal.scss'
 
@@ -21,6 +22,49 @@ import Others from '../../assets/img/injected.svg'
 
 const WalletConnectModal = ({sendIsModal}) => {
 
+    const [account, setAccount] = useState(null);
+    const [web3, setWeb3] = useState(null);
+
+    useEffect(() => {
+    if (web3) {
+        window.ethereum.on('accountsChanged', (accounts) => {
+        setAccount(accounts[0]);
+        });
+
+        window.ethereum.on('chainChanged', (chainId) => {
+        window.location.reload();
+        });
+
+        return () => {
+        window.ethereum.removeListener('accountsChanged');
+        window.ethereum.removeListener('chainChanged');
+        };
+    }
+    }, [web3]);
+
+    const connectMetaMask = async () => {
+        if (window.ethereum) {
+        // Request account access if needed
+        console.log("metamask exist================")
+        try {
+            console.log("open metamask----------------------")
+            const accounts = await window.ethereum.request({ method: 'eth_requestAccounts' });
+            const web3Instance = new Web3(window.ethereum);
+
+            // Set the state with the first account and web3 instance
+            setAccount(accounts[0]);
+            setWeb3(web3Instance);
+            window.localStorage.setItem("isWallet", true);
+            window.localStorage.setItem("address", accounts[0]);
+            handleClose();
+        } catch (error) {
+            console.error('Error connecting to MetaMask', error);
+        }
+        } else {
+        console.error('MetaMask is not installed');
+        }
+    };    
+
     const handleClose = () => {
         sendIsModal(false);
     }
@@ -33,7 +77,7 @@ const WalletConnectModal = ({sendIsModal}) => {
                 </div>
             </div>
             <div className="wallets">
-                <WalletButton img={MetamaskImg} name="MetaMask" />
+                <WalletButton img={MetamaskImg} name="MetaMask" action={connectMetaMask} />
                 <WalletButton img={Coinbase} name="Coinbase" />
                 <WalletButton img={WalletConnect} name="WalletConnect" />
                 <WalletButton img={Trust} name="Trust" />

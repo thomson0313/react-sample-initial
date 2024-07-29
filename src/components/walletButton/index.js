@@ -1,11 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 
 import './styles.walletButton.scss'
 
 
-const WalletButton = ({img, name}) => {
+const WalletButton = ({img, name, action}) => {
+
     return(
-        <div className="wallet-button">
+        <div className="wallet-button" onClick={action}>
             <div className="wallet-icon">
                 <img src={img} alt="wallet" />
             </div>
