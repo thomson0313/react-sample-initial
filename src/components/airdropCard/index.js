@@ -102,6 +102,30 @@ const AirdropCard = () => {
                         </div>
                         <button className="button" onClick={() => setIsModal(true)} disabled>Claim</button>
                     </div>
+                    <div className="claim-panel">
+                        <div className="amount">
+                            <div className="key">Claim $500 in $RBTC </div>
+                        </div>
+                        <button className="button" onClick={() => setIsModal(true)} disabled>Claim</button>
+                    </div>
+                    <div className="claim-panel">
+                        <div className="amount">
+                            <div className="key">$100k Prize giveaway pool in $REDY X Rootstock waiting to be claimed </div>
+                        </div>
+                        <button className="button" onClick={() => setIsModal(true)} disabled>Participate</button>
+                    </div>
+                    <div className="claim-panel">
+                        <div className="amount">
+                            <div className="key">Mining Rewards distribution </div>
+                        </div>
+                        <button className="button" onClick={() => setIsModal(true)} disabled>Mine</button>
+                    </div>
+                    <div className="claim-panel">
+                        <div className="amount">
+                            <div className="key">Migration  </div>
+                        </div>
+                        <button className="button" onClick={() => setIsModal(true)} disabled>Migrate</button>
+                    </div>
                     <div className="connect-button" onClick={() => setIsModal(true)}>Connect Wallet</div>
                     <div className="invite-title">
                         <span>
