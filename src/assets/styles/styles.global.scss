@@ -118,6 +118,18 @@
         --ck-alert-color: color(display-p3 1 1 1);
 }
 
+@font-face {
+    font-family: Roboto Mono;
+    font-weight: 400;
+    src: url('../fonts//regular.ttf')
+}
+
+@font-face {
+    font-family: Roboto Mono;
+    font-weight: 500;
+    src: url('../fonts/medium.ttf')
+}
+
 .background {
     background: linear-gradient(180deg, var(--layout-01) 20.25%, var(--layout-02) 78.59%, var(--layout-03) 100%), url(../../assets/img/bg.svg) repeat-x var(--background-01) center top fixed;
     inset: 0px;

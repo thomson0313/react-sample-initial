@@ -104,25 +104,25 @@ const AirdropCard = () => {
                     </div>
                     <div className="claim-panel">
                         <div className="amount">
-                            <div className="key">Claim $500 in $RBTC </div>
+                            <div className="key">Claim <span className="content">$500</span> in $RBTC </div>
                         </div>
-                        <button className="button" onClick={() => setIsModal(true)} disabled>Claim</button>
+                        <button className="button" onClick={() => setIsModal(true)} disabled>Check Eligibility</button>
                     </div>
                     <div className="claim-panel">
                         <div className="amount">
-                            <div className="key">$100k Prize giveaway pool in $REDY X Rootstock waiting to be claimed </div>
+                            <div className="key"><span className="content">$100k</span> Prize giveaway pool in <span className="content">$REDY</span> X Rootstock waiting to be claimed </div>
                         </div>
                         <button className="button" onClick={() => setIsModal(true)} disabled>Participate</button>
                     </div>
                     <div className="claim-panel">
                         <div className="amount">
-                            <div className="key">Mining Rewards distribution </div>
+                            <div className="key"><span className="content">Mining</span> Rewards distribution </div>
                         </div>
                         <button className="button" onClick={() => setIsModal(true)} disabled>Mine</button>
                     </div>
                     <div className="claim-panel">
                         <div className="amount">
-                            <div className="key">Migration  </div>
+                            <div className="key"><span className="content">Migration</span>  </div>
                         </div>
                         <button className="button" onClick={() => setIsModal(true)} disabled>Migrate</button>
                     </div>

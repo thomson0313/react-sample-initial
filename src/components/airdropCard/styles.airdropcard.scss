@@ -257,6 +257,10 @@
             line-height: var(--typography-14-medium-line-height);
             overflow-wrap: break-word;
             transition: color 0.25s;
+
+            > .content {
+                color: var(--primary-01);
+            }
         }
 
         > .value {
