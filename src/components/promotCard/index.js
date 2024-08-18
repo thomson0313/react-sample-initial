@@ -3,7 +3,7 @@ import React, { useState, useEffect } from "react";
 import WalletConnectModal from "../walletConnectModal";
 import './styles.promotCard.scss'
 
-import PromoteImg_1 from '../../assets/img/promote.gif'
+import PromoteImg_1 from '../../assets/img/promote.webp'
 import PromoteImg_2 from '../../assets/img/promote.jpg'
 import Logo from '../../assets/img/logo.png'
 import CloseButton from '../../assets/img/close.svg'
@@ -26,7 +26,7 @@ const PromotCard = () => {
     useEffect(() => {
         const interval = setInterval(() => {
             setCurrentIndex((prevIndex) => (prevIndex + 1) % PromoteImgs.length);
-        }, 3000); // Change image every 3 seconds
+        }, 7000); // Change image every 3 seconds
 
         return () => clearInterval(interval); // Cleanup interval on component unmount
     }, []);
